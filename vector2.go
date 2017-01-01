@@ -17,8 +17,8 @@ func (a Vector2) SqrMagnitude() float32 {
 	return a.X*a.X + a.Y*a.Y
 }
 
-func (a Vector2) Dot(rhs Vector2) float32 {
-	return a.X*rhs.X + a.Y*rhs.Y
+func (a Vector2) Dot(b Vector2) float32 {
+	return a.X*b.X + a.Y*b.Y
 }
 
 func (a Vector2) Sub(b Vector2) Vector2 {

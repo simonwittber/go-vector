@@ -16,12 +16,12 @@ func (a Vector3) SqrMagnitude() float32 {
 	return a.X*a.X + a.Y*a.Y + a.Z*a.Z
 }
 
-func (a Vector3) Cross(rhs Vector3) Vector3 {
-	return Vector3{a.Y*rhs.Z - a.Z*rhs.Y, a.Z*rhs.X - a.X*rhs.Z, a.X*rhs.Y - a.Y*rhs.X}
+func (a Vector3) Cross(b Vector3) Vector3 {
+	return Vector3{a.Y*b.Z - a.Z*b.Y, a.Z*b.X - a.X*b.Z, a.X*b.Y - a.Y*b.X}
 }
 
-func (a Vector3) Dot(rhs Vector3) float32 {
-	return a.X*rhs.X + a.Y*rhs.Y + a.Z*rhs.Z
+func (a Vector3) Dot(b Vector3) float32 {
+	return a.X*b.X + a.Y*b.Y + a.Z*b.Z
 }
 
 func (a Vector3) Sub(b Vector3) Vector3 {
