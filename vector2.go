@@ -1,3 +1,5 @@
+//Package vector provides Vector2, Vector3 and Vector4 types with the
+//usual family of vector functions,
 package vector
 
 import "math"
